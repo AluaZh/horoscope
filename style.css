@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,700);
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+.stars, .twinkling {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    display:block;
+}
+.stars {
+    background-image: url(https://i.postimg.cc/hhFD7Nkf/apps-47636-13819498107583324-fb06b53a-4974-4acb-85e6-f6f363f85ab6-edec48d0-ec35-4a1f-8bf5-c455987b4a.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+.twinkling {
+    background-image: url(https://i.postimg.cc/CLpNr4PF/twinkling.png);
+    animation: 5s twinkl infinite;
+    animation-timing-function: linear;
+    display: flex;
+    flex-direction: row;
+}
+@keyframes twinkl {
+    from {
+    background-position: 0
+    }
+
+    to {
+    background-position: -100px 0
+    }
+}
+#card1{
+    max-width: 300px;
+    min-height: 370px;
+    background-color: rgba(255, 255, 255, 0.162);
+    color: white;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+}
+h1{
+    margin: 20px auto;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px;
+
+}
+input, select{
+    max-width: 95%;
+    padding: 5px;
+    border: 3px solid rgb(114, 2, 2);
+    border-radius: 6px;
+    margin: 5px 0;
+}
+select{
+    max-width: 100%;
+}
+#checkbox{
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0;
+    align-items: center;
+}
+#checkButton{
+    margin-right: 10px;
+}
+button{
+    padding: 7px 30px;
+    margin: 10px auto;
+    background-color: rgb(114, 2, 2);
+    border: none;
+    border-radius: 6px;
+    color: white;
+}
+button:hover{
+    background-color: rgb(88, 16, 16);
+}
+#card2{
+    max-width: 300px;
+    min-height: 400px;
+    background-color: rgba(255, 255, 255, 0.162);
+    color: white;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    margin-bottom: 5px;
+}
+h6{
+    margin: -15px 0 10px;
+}
+p{
+    width: 90%;
+    font-size: 15px;
+    margin: 5px auto;
+}
+span{
+    color: rgb(141, 10, 10);
+    font-weight: bolder;
+    font-size: 16px;
+}

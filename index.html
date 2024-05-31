@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="twinkling">
+        <div id="card1">
+            <h1>Гороскоп</h1>
+            <form id="form">
+                <label for="name">Name</label>
+                <input type="text" id="name" required>
+                <label for="birthday">Birthday</label>
+                <input type="date" id="birthday" required>
+                <label for="select">Day</label>
+                <select id="select" required>
+                    <option></option>
+                    <option value="today">На сегодня</option>
+                    <option value="tomorrow">На завтра</option>
+                </select>
+                <div id="checkbox">
+                    <input type="checkbox" id="checkButton" required>
+                    <p>Я верю в гороскопы</p>
+                </div>
+                <button id="button">Далее</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
